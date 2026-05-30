@@ -25,18 +25,20 @@ A SystemVerilog RTL implementation of a 32-bit RISC-V processor targeting the **
 │   ├── tb_top.sv         # Full integration/system testbench
 │   └── individual_tbs/   # Module-level tests (ALU, RegFile, etc.)
 └── README.md
+```
 
----
 
 ## How to Run and Simulate
 
 **1. Simulating the Hardware**
+
 Create a new project in ModelSim.
 Add all files from the Component folder and your desired design directory to the project.
 Compile all files.
 Locate the testbench file (marked with the tb postfix) and run the simulation.
 
 **2. Running Custom Programs**
+
 To change the program that runs in the processor:
 Write your assembly code in the program.asm file.
 Ensure the file path is correctly addressed in MachineCodeGenerator.py.
